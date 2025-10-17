@@ -20,7 +20,7 @@ A React-based web application that allows users to plan multi-day trips, add act
 
 ## Live Demo
 
-Check out the app live here: [Travel Itinerary Planner](https://your-deployment-link.com)
+Check out the app live here: [Travel Itinerary Planner](https://travel-itinerary-orcin.vercel.app/)
 1. Clone the repository:
 
 ```bash
