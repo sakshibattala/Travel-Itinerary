@@ -1,16 +1,113 @@
-# React + Vite
+# Travel Itinerary Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that allows users to plan multi-day trips, add activities, hotels, and payments, and generate a PDF itinerary.  
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create a travel overview including name, departure, destination, dates, and number of travelers.
+- Add multiple days to your itinerary, each with activities and time slots (morning, afternoon, evening).
+- Add hotel details including name, city, check-in/out dates, and number of nights.
+- Add payment installments with amount and due date.
+- Generate a PDF of the complete itinerary with a single click.
+- Preview the PDF directly in the browser before downloading.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Tailwind CSS for styling
+- React Context API for state management
+- @react-pdf/renderer for PDF generation
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Check out the app live here: [Travel Itinerary Planner](https://your-deployment-link.com)
+1. Clone the repository:
+
+```bash
+git clone https://github.com/sakshibattala/Travel-Itinerary.git
+```
+
+
+2. Navigate to the project directory: 
+
+```bash
+cd Travel-Itinerary
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view the app in the browser.
+
+Usage
+-----
+
+1.  Fill out the **Travel Overview** form with your name, departure location, destination, travel dates, and number of travelers.
+    
+2.  Add **Days** to your trip and include activities for each day.
+    
+3.  Add **Hotels** for your stay.
+    
+4.  Add **Payment** installments if required.
+    
+5.  Preview and download your itinerary as a PDF using the **Download Itinerary** button.
+    
+
+Sample Data for Testing
+-----------------------
+
+*   Name: Jane Doe
+    
+*   Departure From: Tokyo
+    
+*   Destination: Switzerland
+    
+*   Departure Date: 2025-11-01
+    
+*   Arrival Date: 2025-11-10
+    
+*   Travelers: 2
+    
+
+**Days Example:**
+
+*   Day 1: Explore the city
+    
+    *   Activity 1: Visit Museum (Morning)
+        
+    *   Activity 2: Lunch at local cafe (Afternoon)
+        
+
+**Hotels Example:**
+
+*   Hotel: Grand Swiss Hotel, Zurich, Check-in: 2025-11-01, Check-out: 2025-11-05
+    
+
+**Payments Example:**
+
+*   Amount: 500 RS, Due Date: 2025-10-20
+    
+
+Deployment
+----------
+
+You can host this project on **Netlify**, **Vercel**, or **GitHub Pages**.
+
+Contributing
+------------
+
+Feel free to fork the project and submit pull requests for improvements or bug fixes.
+
+License
+-------
+
+MIT License
